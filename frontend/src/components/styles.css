@@ -1,0 +1,124 @@
+body {
+  /* Set background image */
+  background-image: url("./landingPageBackground.jpg");
+  /* Adjust background image properties */
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center; /* Center the background image */
+}
+.landing-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-top: 5%; */
+}
+
+.left-content {
+  width: 50%;
+  padding: 20px;
+  margin-left: 10%;
+}
+.left-content h1 {
+  font-size: 80px;
+}
+.left-content p {
+  font-size: 30px;
+}
+
+.right-content {
+  width: 35%;
+  padding: 20px;
+  margin-right: 5%;
+  /* Add styling for animated image here */
+}
+.right-content img {
+  width: 100%;
+  border-radius: 100%;
+  /* border: 5px double #00ff40; */
+  opacity: 0.5;
+}
+
+.icons {
+  margin-bottom: 20px;
+}
+
+.get-started-btn {
+  padding: 15px 25px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Add transition for smooth animation */
+}
+
+.get-started-btn:hover {
+  background-color: #0056b3; /* Darker shade of blue */
+}
+
+.get-started-btn:active {
+  background-color: #004080; /* Even darker shade of blue when clicked */
+}
+
+.landing-page-box {
+  border: 6px ridge #02a2ff; /* Example border style */
+  /* padding: 20px; */
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 20px;
+  background-color: #ffffff00;
+  border-radius: 40px; /* Example margin */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column;
+}
+
+.landing-page {
+  flex: 1; /* Make the landing page content fill remaining vertical space */
+}
+.navbar {
+  background-color: #ffffff00;
+}
+
+@keyframes moveHighlight {
+  0% {
+    top: 0;
+  }
+  13% {
+    top: 0;
+  }
+  26% {
+    top: 25%;
+  }
+  39% {
+    top: 25%;
+  }
+  52% {
+    top: 50%;
+  }
+  65% {
+    top: 50%;
+  }
+  78% {
+    top: 75%;
+  }
+  91% {
+    top: 75%;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+.highlighted-box {
+  position: absolute;
+  left: 0;
+  width: 85%;
+  height: 3.1rem;
+  background-color: rgba(34, 255, 0, 0.285);
+  border-width: 5px;
+  border-color: #007bff;
+  border-radius: 0.95rem;
+  animation: moveHighlight 12s linear infinite;
+}
+
+/* Additional styling for icons if needed */
